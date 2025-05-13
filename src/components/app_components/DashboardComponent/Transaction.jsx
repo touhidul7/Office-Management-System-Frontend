@@ -63,7 +63,7 @@ const Transaction = () => {
   
     const fetchStudents = async () => {
       try {
-        const response = await fetch(`${api_key}transactions_per_page?page=${currentPage}&limit=${limit}`);
+        const response = await fetch(`${api_key}/transactions_per_page?page=${currentPage}&limit=${limit}`);
         const data = await response.json();
         setTransactions(data.transactions);
         setTotalPages(data.totalPages);
