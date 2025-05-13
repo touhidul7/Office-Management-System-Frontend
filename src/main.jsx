@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider.jsx";
 import Dashboard from "./routes/Dashboard.jsx";
 import Teachers from "./routes/Page/Teachers/Teachers.jsx";
 import { Login } from "./components/app_components/Login.jsx";
-import DashboardContent from "./routes/Page/Dashboard/DashboardContent.jsx";
+// import DashboardContent from "./routes/PageDashboardContent.jsx";
 import AddTeacher from "./routes/Page/Teachers/AddTeacher.jsx";
 import Students from "./routes/Page/Students/Students.jsx";
 import AddStudents from "./routes/Page/Students/AddStudents.jsx";
@@ -54,6 +54,7 @@ import EditStuff from "./routes/Page/Staffs/EditStuff";
 import NotFound from "./routes/Page/NotFound/NotFound";
 import TotalTransection from "./routes/Page/TotalTransection/TotalTransection";
 import Support from "./routes/Page/Support/Support";
+import DashboardContent from "./routes/Page/Dashboard/DashboardContent";
 
 const router = createBrowserRouter([
   {
@@ -65,176 +66,176 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "/dashboard/",
+        path: "",
         element: <DashboardContent />,
       },
       {
-        path: "/dashboard/teachers",
+        path: "teachers",
         element: <Teachers />,
       },
       {
-        path: "/dashboard/add-teachers",
+        path: "add-teachers",
         element: <AddTeacher />,
       },
       {
-        path: "/dashboard/students",
+        path: "students",
         element: <Students />,
       },
       {
-        path: "/dashboard/add-students",
+        path: "add-students",
         element: <AddStudents />,
       },
       {
-        path: "/dashboard/stuffs",
+        path: "stuffs",
         element: <Staffs />,
       },
       {
-        path: "/dashboard/add-staffs",
+        path: "add-staffs",
         element: <AddStuffs />,
       },
       {
-        path: "/dashboard/subjects",
+        path: "subjects",
         element: <Subjects />,
       },
       {
-        path: "/dashboard/add-subjects",
+        path: "add-subjects",
         element: <AddSubjects />,
       },
       {
-        path: "/dashboard/classes",
+        path: "classes",
         element: <Classes />,
       },
       {
-        path: "/dashboard/add-classes",
+        path: "add-classes",
         element: <AddClasses />,
       },
       {
-        path: "/dashboard/class-view/:id",
+        path: "class-view/:id",
         element: <ClassView />,
       },
       {
-        path: "/dashboard/notices",
+        path: "notices",
         element: <Notices />,
       },
       {
-        path: "/dashboard/add-notices",
+        path: "add-notices",
         element: <AddNotices />,
       },
       {
-        path: "/dashboard/fees",
+        path: "fees",
         element: <Fees />,
       },
       {
-        path: "/dashboard/add-fees",
+        path: "add-fees",
         element: <AddFees />,
       },
       {
-        path: "/dashboard/sections",
+        path: "sections",
         element: <Sections />,
       },
       {
-        path: "/dashboard/add-fees",
+        path: "add-fees",
         element: <AddFees />,
       },
       {
-        path: "/dashboard/sections",
+        path: "sections",
         element: <Sections />,
       },
       {
-        path: "/dashboard/add-sections",
+        path: "add-sections",
         element: <AddSections />,
       },
       {
-        path: "/dashboard/add-fees",
+        path: "add-fees",
         element: <AddFees />,
       },
       {
-        path: "/dashboard/results",
+        path: "results",
         element: <Results />,
       },
       {
-        path: "/dashboard/add-results",
+        path: "add-results",
         element: <AddResults />,
       },
       {
-        path: "/dashboard/id-cards",
+        path: "id-cards",
         element: <IdCards />,
       },
       {
-        path: "/dashboard/salaries-report",
+        path: "salaries-report",
         element: <SalaryReport />,
       },
       {
-        path: "/dashboard/pay-salaries",
+        path: "pay-salaries",
         element: <PaySalary />,
       },
       {
-        path: "/dashboard/reports",
+        path: "reports",
         element: <Reports />,
       },
       {
-        path: "/dashboard/add-reports",
+        path: "add-reports",
         element: <AddReports />,
       },
       {
-        path: "/dashboard/exams",
+        path: "exams",
         element: <Exams />,
       },
       {
-        path: "/dashboard/add-exams",
+        path: "add-exams",
         element: <AddExams />,
       },
       {
-        path: "/dashboard/add-accounts",
+        path: "add-accounts",
         element: <AddAccounts />,
       },
       {
-        path: "/dashboard/view-accounts-report",
+        path: "view-accounts-report",
         element: <ViewAccountReport />,
       },
       {
-        path: "/dashboard/admin-settings",
+        path: "admin-settings",
         element: <Settings />,
       },
       {
-        path: "/dashboard/student-profile/:id",
+        path: "student-profile/:id",
         element: <StudentProfile />,
       },
       {
-        path: "/dashboard/teachers-profile/:id",
+        path: "teachers-profile/:id",
         element: <TeacherProfile />,
       },
       {
-        path: "/dashboard/staffs-profile/:id",
+        path: "staffs-profile/:id",
         element: <StaffProfile />,
       },
       {
-        path: "/dashboard/add-attendance",
+        path: "add-attendance",
         element: <AddAttendance />,
       },
       /* Edit Works */
       {
-        path: "/dashboard/editClass/:id",
+        path: "editClass/:id",
         element: <EditClasses />,
       },
       {
-        path: "/dashboard/editStudent/:id",
+        path: "editStudent/:id",
         element: <EditStudents />,
       },
       {
-        path: "/dashboard/teachers-edit/:id",
+        path: "teachers-edit/:id",
         element: <EditTeacher />,
       },
       {
-        path: "/dashboard/staffs-edit/:id",
+        path: "staffs-edit/:id",
         element: <EditStuff />,
       },
       {
-        path: "/dashboard/all-transection",
+        path: "all-transection",
         element: <TotalTransection />,
       },
       {
-        path: "/dashboard/support",
+        path: "support",
         element: <Support />,
       },
       {
