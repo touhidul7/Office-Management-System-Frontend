@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <NavBar /> */}
+      {/* <NavBar /> */} 
       <div className="px-5">
         <Outlet />
       </div>
