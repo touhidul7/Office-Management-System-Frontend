@@ -19,7 +19,7 @@ const Admin = () => {
     }
 
     const handleLogin = () => {
-      fetch('http://192.168.0.146:5000/admin_login', {
+      fetch('http://localhost:5000/admin_login', {
         method: 'POST',
         credentials: 'include', // Send cookies along with the request
         headers: {
@@ -38,7 +38,7 @@ const Admin = () => {
 
 
     const handleLogout = () => {
-      fetch('http://192.168.0.146:5000/admin_logout', {
+      fetch('http://localhost/admin_logout', {
         method: 'GET',
         credentials: 'include', // Send cookies along with the request
       })
