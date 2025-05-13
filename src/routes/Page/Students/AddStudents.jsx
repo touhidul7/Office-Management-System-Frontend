@@ -120,6 +120,7 @@ const AddStudents = () => {
     const renamedFile = new File([image], `${filename}.${ext}`, {
       type: image.type,
     });
+    
     formData.append("image", renamedFile);
     try {
       const response = await axios.post(
