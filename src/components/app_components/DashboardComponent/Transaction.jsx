@@ -28,7 +28,7 @@ import Loading from "../Loading";
 import { dateTime } from "@/lib/api";
 import { MdAnalytics } from "react-icons/md";
 import Alert from "../Alert";
-const api_key = import.meta.env.VITE_apiKey;
+const api_key = import.meta.env.VITE_APIKEY;
 
 
 

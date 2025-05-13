@@ -13,7 +13,7 @@ import { AuthContext } from "@/Providers/AuthProvider";
 
 
 const Settings = () => {
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   const { admin, changeUserState } = useContext(AuthContext)
   const [isData, setIsData] = useState(true);
   const [image, setImage] = useState(null)

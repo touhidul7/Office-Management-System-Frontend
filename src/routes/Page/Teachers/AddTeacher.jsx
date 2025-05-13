@@ -36,7 +36,7 @@ const AddTeacher = () => {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   
   const handleCloseDialog = () => {
     setIsDialogOpen(false);

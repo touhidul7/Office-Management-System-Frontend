@@ -31,7 +31,7 @@ const StudentProfile = () => {
   const [isData, setIsData] = useState(false);
   const [admissionFee, setAdmissionFee] = useState([]);
   const [regularFee, setRegularFee] = useState([]);
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   let id = useParams();
   const [attendance, setAddendance] = useState(0);
 

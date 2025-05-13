@@ -27,7 +27,7 @@ import {
 
 const TableRowCustom = ({ data, handleDelete, nameFile }) => {
   const { id_no, name, phone, designation, department } = data;
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   // console.log(handleDelete);
   return (
     <TableRow>

@@ -36,7 +36,7 @@ import { Link } from "react-router-dom";
 import Alert from "./Alert";
 const StudentTable = ({ students, studentFetchHandler }) => {
   //  const [_students, setStudents] = useState(students)
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   const handleDelete = (id) => {
     if (window.confirm("Are you sure you want to delete this?")) {
       toast.promise(

@@ -36,7 +36,7 @@ const TeacherProfile = () => {
   // const [admissionFee, setAdmissionFee] = useState([]);
   // const [regularFee, setRegularFee] = useState([]);
   let id = useParams();
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   useEffect(() => {
     getTeacherById(id.id)
       .then((res) => res.json())

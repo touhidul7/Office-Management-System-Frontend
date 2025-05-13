@@ -31,7 +31,7 @@ const AddStuffs = () => {
   } = useForm();
 
   const [isData2, setIsData2] = useState(false);
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 

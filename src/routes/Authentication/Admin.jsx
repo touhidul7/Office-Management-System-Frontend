@@ -13,7 +13,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Admin = () => {
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
     const [eye, setEye] = useState(false)
     const handleEye = () => {
         setEye(!eye)

@@ -16,7 +16,7 @@ import axios from "axios";
 import UploadDialog from "@/components/app_components/UploadDialog";
 import toast from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
-const api_key = import.meta.env.VITE_apiKey;
+const api_key = import.meta.env.VITE_APIKEY;
 
 const EditTeacher = () => {
   const { register, handleSubmit, setValue } = useForm();

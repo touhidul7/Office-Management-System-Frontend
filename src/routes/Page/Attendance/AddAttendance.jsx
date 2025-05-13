@@ -54,7 +54,7 @@ const AddAttendance = () => {
   const getClassAttendanceByDate = async(classId, date, sectionId) => {
     console.log(date)
     try {
-      const response = await fetch(import.meta.env.VITE_apiKey + `class/attendance/${classId}/${date}`, {
+      const response = await fetch(import.meta.env.VITE_APIKEY + `class/attendance/${classId}/${date}`, {
         method: "GET",
         credentials: "include",
       });

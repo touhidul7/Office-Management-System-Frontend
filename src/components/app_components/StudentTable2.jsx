@@ -24,7 +24,7 @@ import Alert from "./Alert";
 const StudentTable2 = ({ students ,courseClassHandler}) => {
   const [_students, setStudents] = useState(students);
   //  console.log(students)
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
 
   const handleDelete = (id) => {
     toast.promise(

@@ -23,7 +23,7 @@ const AddSubjects = () => {
   const [teachers, setTeachers] = useState([]);
   const [isData, setIsData] = useState(false);
   const [isData2, setIsData2] = useState(false);
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
 
   const onSubmit = (data) => {
     reset();

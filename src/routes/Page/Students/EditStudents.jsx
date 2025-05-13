@@ -31,7 +31,7 @@ const EditStudents = () => {
   const { register, handleSubmit, setValue } = useForm();
   const navigate = useNavigate();
   const [isData, setIsData] = useState(false);
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   const [stdId, setStdID] = useState("");
   const [tableId, setTableId] = useState(null);
 

@@ -12,7 +12,7 @@ import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
 import { attendanceUpdate } from "@/lib/api";
 const ClassAttendanceTable = ({ students, date, updateAttendanceTable }) => {
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   const handleStatus =  (studentId, isPresent, attendanceId, classId, sectionId) => {
 
     attendanceUpdate({isPresent: !isPresent}, studentId, date, attendanceId)

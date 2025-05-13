@@ -75,7 +75,7 @@ const AddStudents = () => {
   const [incharge, setIncharge] = useState(null)
 
   const { admin } = useContext(AuthContext);
-  const api_key = import.meta.env.VITE_apiKey;
+  const api_key = import.meta.env.VITE_APIKEY;
   const AdmissionDataSend = (data) => {
     // console.log(data)
     data = {...data, incharge}
