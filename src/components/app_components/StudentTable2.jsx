@@ -24,6 +24,7 @@ import Alert from "./Alert";
 const StudentTable2 = ({ students ,courseClassHandler}) => {
   const [_students, setStudents] = useState(students);
   //  console.log(students)
+  const api_key = import.meta.env.VITE_apiKey;
 
   const handleDelete = (id) => {
     toast.promise(
@@ -80,7 +81,7 @@ const StudentTable2 = ({ students ,courseClassHandler}) => {
                     alt="Student image"
                     className="aspect-square rounded-md object-cover"
                     height="64"
-                    src={`http://localhost:5000/image/students/${student.id_no}`}
+                    src={`${api_key}/image/students/${student.id_no}`}
                     width="64"
                   />
                   {/* <ImageView imageUrl={`http://localhost:5000/image/students/${student.id_no}`} defaultImageUrl="https://static.vecteezy.com/system/resources/thumbnails/006/487/917/small_2x/man-avatar-icon-free-vector.jpg"/> */}

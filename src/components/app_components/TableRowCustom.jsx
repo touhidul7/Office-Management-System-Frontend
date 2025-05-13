@@ -27,7 +27,7 @@ import {
 
 const TableRowCustom = ({ data, handleDelete, nameFile }) => {
   const { id_no, name, phone, designation, department } = data;
-
+  const api_key = import.meta.env.VITE_apiKey;
   // console.log(handleDelete);
   return (
     <TableRow>
@@ -36,7 +36,7 @@ const TableRowCustom = ({ data, handleDelete, nameFile }) => {
           alt="Teacher Image"
           className="aspect-square rounded-md object-cover"
           height="64"
-          src={`http://localhost:5000/image/${nameFile}/${id_no}`}
+          src={`${api_key}/image/${nameFile}/${id_no}`}
           width="64"
         />
       </TableCell>

@@ -36,7 +36,8 @@ const AddTeacher = () => {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-
+  const api_key = import.meta.env.VITE_apiKey;
+  
   const handleCloseDialog = () => {
     setIsDialogOpen(false);
   }; 
@@ -47,7 +48,7 @@ const AddTeacher = () => {
     const renamedFile = new File([image],`${filename}.${ext}`, {type: image.type})
     formData.append('image', renamedFile);
     try {
-      const response = await axios.post('http://localhost:5000/teacher_upload', formData, {
+      const response = await axios.post(`${api_key}/teacher_upload`, formData, {
         withCredentials: true,
         onUploadProgress: (progressEvent) => {
           const progress = Math.round((progressEvent.loaded / progressEvent.total) * 100);

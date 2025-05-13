@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import Alert from "@/components/app_components/Alert";
 import Loading from "@/components/app_components/Loading";
@@ -122,7 +123,7 @@ const AddStudents = () => {
     formData.append("image", renamedFile);
     try {
       const response = await axios.post(
-        `${api_key}student_upload`,
+        `${api_key}/student_upload`,
         formData,
         {
           withCredentials: true,

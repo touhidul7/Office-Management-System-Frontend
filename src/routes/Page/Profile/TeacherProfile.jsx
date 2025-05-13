@@ -36,7 +36,7 @@ const TeacherProfile = () => {
   // const [admissionFee, setAdmissionFee] = useState([]);
   // const [regularFee, setRegularFee] = useState([]);
   let id = useParams();
-
+  const api_key = import.meta.env.VITE_apiKey;
   useEffect(() => {
     getTeacherById(id.id)
       .then((res) => res.json())
@@ -121,7 +121,7 @@ const TeacherProfile = () => {
                             alt="Teacher image"
                             className="aspect-square rounded-md object-cover "
                             height="64"
-                            src={`http://localhost:5000/image/teachers/${teacher.id_no}`}
+                            src={`${api_key}/${teacher.id_no}`}
                             width="64"
                           />
                         </div>

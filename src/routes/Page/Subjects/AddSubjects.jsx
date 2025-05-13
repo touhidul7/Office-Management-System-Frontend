@@ -23,10 +23,11 @@ const AddSubjects = () => {
   const [teachers, setTeachers] = useState([]);
   const [isData, setIsData] = useState(false);
   const [isData2, setIsData2] = useState(false);
+  const api_key = import.meta.env.VITE_apiKey;
 
   const onSubmit = (data) => {
     reset();
-    fetch("http://localhost:5000/subject_add", {
+    fetch(`${api_key}/subject_add`, {
       method: "POST",
       credentials: "include",
       headers: {

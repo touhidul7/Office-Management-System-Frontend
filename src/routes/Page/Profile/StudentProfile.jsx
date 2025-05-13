@@ -31,6 +31,7 @@ const StudentProfile = () => {
   const [isData, setIsData] = useState(false);
   const [admissionFee, setAdmissionFee] = useState([]);
   const [regularFee, setRegularFee] = useState([]);
+  const api_key = import.meta.env.VITE_apiKey;
   let id = useParams();
   const [attendance, setAddendance] = useState(0);
 
@@ -218,7 +219,7 @@ const StudentProfile = () => {
                             alt="Student image"
                             className="aspect-square rounded-md object-cover "
                             height="64"
-                            src={`http://localhost:5000/image/students/${student.id_no}`}
+                            src={`${api_key}/image/students/${student.id_no}`}
                             width="64"
                           />
                         </div>

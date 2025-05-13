@@ -362,10 +362,6 @@ export default function IdCards() {
                     }}
                     className=" w-full bg-black left-0 mt-7 flex justify-center py-3"
                   >
-                    {/* <img
-                      className="h-[80px] bg-white"
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
-                    /> */}
                     <div
                       style={{
                         height: "auto",
@@ -538,10 +534,6 @@ export default function IdCards() {
                     }}
                     className=" w-full bg-black left-0 mt-7 flex justify-center py-3"
                   >
-                    {/* <img
-                      className="h-[80px] bg-white"
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
-                    /> */}
                     <div
                       style={{
                         height: "auto",

@@ -8,12 +8,11 @@ import {
   TableRow,
 } from "../ui/table";
 import Alert from "./Alert";
-import { useState } from "react";
 import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
 import { attendanceUpdate } from "@/lib/api";
 const ClassAttendanceTable = ({ students, date, updateAttendanceTable }) => {
-
+  const api_key = import.meta.env.VITE_apiKey;
   const handleStatus =  (studentId, isPresent, attendanceId, classId, sectionId) => {
 
     attendanceUpdate({isPresent: !isPresent}, studentId, date, attendanceId)
@@ -58,10 +57,9 @@ const ClassAttendanceTable = ({ students, date, updateAttendanceTable }) => {
                     alt="Product image"
                     className="aspect-square rounded-md object-cover"
                     height="64"
-                    src={`http://localhost:5000/image/students/${student.id_no}`}
+                    src={`${api_key}/image/students/${student.id_no}`}
                     width="64"
                   />
-                  {/* <ImageView imageUrl={`http://localhost:5000/image/students/${student.id_no}`} defaultImageUrl="https://static.vecteezy.com/system/resources/thumbnails/006/487/917/small_2x/man-avatar-icon-free-vector.jpg"/> */}
                 </TableCell>
                 <TableCell className="font-medium">{student.id_no}</TableCell>
                 <TableCell className="hidden md:table-cell">

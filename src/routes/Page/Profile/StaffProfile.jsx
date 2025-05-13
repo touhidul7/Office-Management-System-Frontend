@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { ArrowUpRight, Users } from "lucide-react";
 
 import { TbCurrencyTaka } from "react-icons/tb";

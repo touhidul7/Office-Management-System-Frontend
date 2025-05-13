@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import Alert from "@/components/app_components/Alert";
 import { Button } from "@/components/ui/button";

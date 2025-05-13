@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { File, PlusCircle, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -47,7 +48,7 @@ export default function Students() {
     const fetchStudents = async () => {
       try {
         const response = await fetch(
-          `${api_key}students_per_page?page=${currentPage}&limit=${limit}&search=${search}`
+          `${api_key}/students_per_page?page=${currentPage}&limit=${limit}&search=${search}`
         );
         const data = await response.json();
         // console.log(data);

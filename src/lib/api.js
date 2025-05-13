@@ -1,7 +1,7 @@
 const api_key = import.meta.env.VITE_apiKey;
 
 const adminLogin = (email, password) => {
-  return fetch(api_key + "admin_login", {
+  return fetch(api_key + "/admin_login", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -13,7 +13,7 @@ const adminLogin = (email, password) => {
 
 //Add Class
 const classAdd = (data) => {
-  return fetch(api_key + "class_add", {
+  return fetch(api_key + "/class_add", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -25,7 +25,7 @@ const classAdd = (data) => {
 
 //Add teachers
 const teacherAdd = (data) => {
-  return fetch(api_key + "teacher_add", {
+  return fetch(api_key + "/teacher_add", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -37,7 +37,7 @@ const teacherAdd = (data) => {
 
 /* Add Staff */
 const staffAdd = (data) => {
-  return fetch(api_key + "staff_add", {
+  return fetch(api_key + "/staff_add", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -50,7 +50,7 @@ const staffAdd = (data) => {
 /* Add Student */
 
 const studentAdd = (data) => {
-  return fetch(api_key + "student_add", {
+  return fetch(api_key + "/student_add", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -61,7 +61,7 @@ const studentAdd = (data) => {
 };
 
 const AdmissionFeeAdd = (data) => {
-  return fetch(api_key + "admission_fee", {
+  return fetch(api_key + "/admission_fee", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -73,7 +73,7 @@ const AdmissionFeeAdd = (data) => {
 
 //Regular fee add
 const RegularFeeAdd = (data) => {
-  return fetch(api_key + "regular_fee", {
+  return fetch(api_key + "/regular_fee", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -86,7 +86,7 @@ const RegularFeeAdd = (data) => {
 
 
 const SalaryAdd = (data, employee) => {
-  return fetch(api_key + 'salary_add/'+employee, {
+  return fetch(api_key + '/salary_add/'+employee, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -96,31 +96,10 @@ const SalaryAdd = (data, employee) => {
   });
 };
 
-//teacher salary add
-// const teacherSalaryAdd = (data) => {
-//   return fetch(api_key + 'teacher_salary_add', {
-//     method: "POST",
-//     credentials: "include",
-//     headers: {
-//       "content-type": "application/json",
-//     },
-//     body: JSON.stringify(data),
-//   });
-// };
 
-// const staffSalaryAdd = (data) => {
-//   return fetch(api_key + 'staff_salary_add', {
-//     method: "POST",
-//     credentials: "include",
-//     headers: {
-//       "content-type": "application/json",
-//     },
-//     body: JSON.stringify(data),
-//   });
-// };
 
 const sectionAdd = (data) => {
-  return fetch(api_key + "section_add", {
+  return fetch(api_key + "/section_add", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -132,7 +111,7 @@ const sectionAdd = (data) => {
 
 //Add Settings
 const settingsAdd = (data) => {
-  return fetch(api_key + "settings_add", {
+  return fetch(api_key + "/settings_add", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -144,7 +123,7 @@ const settingsAdd = (data) => {
 
 //set all absent for students
 const setClassAbsent = (data) => {
-  return fetch(api_key + "class/attendances", {
+  return fetch(api_key + "/class/attendances", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -156,7 +135,7 @@ const setClassAbsent = (data) => {
 
 // ADD Accounts
 const accountsAdd = (data) => {
-  return fetch(api_key + "account_add", {
+  return fetch(api_key + "/account_add", {
     method: "POST",
     credentials: "include",
     headers: {
@@ -170,14 +149,14 @@ const accountsAdd = (data) => {
 
 //GET
 const adminLogout = () => {
-  return fetch(api_key + "admin_logout", {
+  return fetch(api_key + "/admin_logout", {
     method: "GET",
     credentials: "include",
   });
 };
 
 const checkAdminLogin = () => {
-  return fetch(api_key + "check_admin_login", {
+  return fetch(api_key + "/check_admin_login", {
     method: "GET",
     credentials: "include",
   });
@@ -185,14 +164,14 @@ const checkAdminLogin = () => {
 
 // Classes
 const getClasses = () => {
-  return fetch(api_key + "classes", {
+  return fetch(api_key + "/classes", {
     method: "GET",
     credentials: "include",
   });
 };
 
 const getClassById = (id) => {
-  return fetch(api_key + "class/" + id, {
+  return fetch(api_key + "/class/" + id, {
     method: "GET",
     credentials: "include",
   });
@@ -200,21 +179,21 @@ const getClassById = (id) => {
 
 //teachers
 const getTeachers = () => {
-  return fetch(api_key + "teachers", {
+  return fetch(api_key + "/teachers", {
     method: "GET",
     credentials: "include",
   });
 };
 
 const getLastTeacher = () => {
-  return fetch(api_key + "last_teacher", {
+  return fetch(api_key + "/last_teacher", {
     method: "GET",
     credentials: "include",
   });
 };
 //getTeacherById
 const getTeacherById = (id) => {
-  return fetch(api_key + "teacher/" + id, {
+  return fetch(api_key + "/teacher/" + id, {
     method: "GET",
     credentials: "include",
   });
@@ -222,21 +201,21 @@ const getTeacherById = (id) => {
 
 /* Get Last Staff */
 const getLastStaff = () => {
-  return fetch(api_key + "last_staff", {
+  return fetch(api_key + "/last_staff", {
     method: "GET",
     credentials: "include",
   });
 };
 /* Get All Staff */
 const getStaffs = () => {
-  return fetch(api_key + "staffs", {
+  return fetch(api_key + "/staffs", {
     method: "GET",
     credentials: "include",
   });
 };
 //getStaffById
 const getStaffById = (id) => {
-  return fetch(api_key + "staff/" + id, {
+  return fetch(api_key + "/staff/" + id, {
     method: "GET",
     credentials: "include",
   });
@@ -244,7 +223,7 @@ const getStaffById = (id) => {
 
 // getStudentsCount
 const getTeacherCount = () => {
-  return fetch(api_key + "teacher_count", {
+  return fetch(api_key + "/teacher_count", {
     method: "GET",
     credentials: "include",
   });
@@ -252,7 +231,7 @@ const getTeacherCount = () => {
 
 // View Students
 const viewStudentsData = () => {
-  return fetch(api_key + "students", {
+  return fetch(api_key + "/students", {
     method: "GET",
     credentials: "include",
   });
@@ -260,7 +239,7 @@ const viewStudentsData = () => {
 
 //getStudents
 const getStudents = () => {
-  return fetch(api_key + "students", {
+  return fetch(api_key + "/students", {
     method: "GET",
     credentials: "include",
   });
@@ -268,7 +247,7 @@ const getStudents = () => {
 
 
 const getLastStudent = () => {
-  return fetch(api_key + "last_student", {
+  return fetch(api_key + "/last_student", {
     method: "GET",
     credentials: "include",
   });
@@ -276,7 +255,7 @@ const getLastStudent = () => {
 
 // getStudentsCount
 const getStudentCount = () => {
-  return fetch(api_key + "student_count", {
+  return fetch(api_key + "/student_count", {
     method: "GET",
     credentials: "include",
   });
@@ -284,14 +263,14 @@ const getStudentCount = () => {
 
 //getStudentById_no
 const getStudentById = (id) => {
-  return fetch(api_key + "student/" + id, {
+  return fetch(api_key + "/student/" + id, {
     method: "GET",
     credentials: "include",
   });
 };
 
 const getSettings = () => {
-  return fetch(api_key + "settings", {
+  return fetch(api_key + "/settings", {
     method: "GET",
     credentials: "include",
   });
@@ -299,7 +278,7 @@ const getSettings = () => {
 
 // get image
 const getImage = (folder, filename) => {
-  return fetch(api_key + `image/${folder}/${filename}`, {
+  return fetch(api_key + `/image/${folder}/${filename}`, {
     method: "GET",
     credentials: "include",
   });
@@ -307,21 +286,21 @@ const getImage = (folder, filename) => {
 
 // get student by attendance
 const getStudentsByClassAndSection = (classId) => {
-  return fetch(api_key + `students/${classId}`, {
+  return fetch(api_key + `/students/${classId}`, {
     method: "GET",
     credentials: "include",
   });
 };
 
 const getClassAttendance = (classId, date) => {
-  return fetch(api_key + `class/attendance/${classId}/${date}`, {
+  return fetch(api_key + `/class/attendance/${classId}/${date}`, {
     method: "GET",
     credentials: "include",
   });
 };
 /* Get Accounts Details */
 const getAccounts = () => {
-  return fetch(api_key + "accounts", {
+  return fetch(api_key + "/accounts", {
     method: "GET",
     credentials: "include",
   });
@@ -329,7 +308,7 @@ const getAccounts = () => {
 
 //getTeacherOrStaffById_no
 const getTeacherOrStaffById = (id, type) => {
-  return fetch(api_key + `${type}/` + id, {
+  return fetch(api_key + `/${type}/` + id, {
     method: "GET",
     credentials: "include",
   });
@@ -338,7 +317,7 @@ const getTeacherOrStaffById = (id, type) => {
 /* Account Report BY Date */
 
 const accountReportByDate = (startDate, endDate) => {
-  return fetch(api_key + `accountsByDate?startDate=${startDate}&endDate=${endDate}`,
+  return fetch(api_key + `/accountsByDate?startDate=${startDate}&endDate=${endDate}`,
     {
       method: "GET",
       credentials: "include",
@@ -349,7 +328,7 @@ const accountReportByDate = (startDate, endDate) => {
 /* Salary Report By Date */
 
 const salaryReportByDate = (startDate, endDate) => {
-  return fetch(api_key + `salaries?startDate=${startDate}&endDate=${endDate}`,
+  return fetch(api_key + `/salaries?startDate=${startDate}&endDate=${endDate}`,
     {
       method: "GET",
       credentials: "include",
@@ -360,7 +339,7 @@ const salaryReportByDate = (startDate, endDate) => {
 
 /* Fee Report By Date */
 const feeReportByDate = (startDate, endDate) => {
-  return fetch(api_key + `fees?startDate=${startDate}&endDate=${endDate}`,
+  return fetch(api_key + `/fees?startDate=${startDate}&endDate=${endDate}`,
     {
       method: "GET",
       credentials: "include",
@@ -370,7 +349,7 @@ const feeReportByDate = (startDate, endDate) => {
 
 /* ALL  Report By Date */
 const transactions = (startDate, endDate) => {
-  return fetch(api_key + `transactions?startDate=${startDate}&endDate=${endDate}`,
+  return fetch(api_key + `/transactions?startDate=${startDate}&endDate=${endDate}`,
     {
       method: "GET",
       credentials: "include",
@@ -380,7 +359,7 @@ const transactions = (startDate, endDate) => {
 
 //count
 const getCount = () => {
-  return fetch(api_key + "count", {
+  return fetch(api_key + "/count", {
     method: "GET",
     credentials: "include",
   });
@@ -390,7 +369,7 @@ const getCount = () => {
 //UPDATE
 
 const adminUpdate = (data, id) => {
-  return fetch(api_key + "admin_update/" + id, {
+  return fetch(api_key + "/admin_update/" + id, {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -401,7 +380,7 @@ const adminUpdate = (data, id) => {
 };
 
 const studentReadmission = (data, id) => {
-  return fetch(api_key + "readmission/" + id, {
+  return fetch(api_key + "/readmission/" + id, {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -412,7 +391,7 @@ const studentReadmission = (data, id) => {
 };
 
 const studentUpdate = (data, id) => {
-  return fetch(api_key + "readmission/" + id, {
+  return fetch(api_key + "/readmission/" + id, {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -423,7 +402,7 @@ const studentUpdate = (data, id) => {
 };
 
 const teacherUpdate = (data, id) => {
-  return fetch(api_key + "teacher_update/" + id, {
+  return fetch(api_key + "/teacher_update/" + id, {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -434,7 +413,7 @@ const teacherUpdate = (data, id) => {
 };
 
 const staffUpdate = (data, id) => {
-  return fetch(api_key + "staff_update/" + id, {
+  return fetch(api_key + "/staff_update/" + id, {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -445,7 +424,7 @@ const staffUpdate = (data, id) => {
 };
 
 const classUpdate = (data, id) => {
-  return fetch(api_key + "class_update/" + id, {
+  return fetch(api_key + "/class_update/" + id, {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -459,7 +438,7 @@ const classUpdate = (data, id) => {
 /* Settings Update */
 
 const settingsUpdate = (data, id) => {
-  return fetch(api_key + "settings_update/" + id, {
+  return fetch(api_key + "/settings_update/" + id, {
     method: "PUT",
     credentials: "include",
     headers: {
@@ -472,7 +451,7 @@ const settingsUpdate = (data, id) => {
 // Attendance Update
 const attendanceUpdate = (data, studentId, date, attendanceId) => {
   return fetch(
-    api_key + `class/attendance/${attendanceId}/${studentId}/${date}/`,
+    api_key + `/class/attendance/${attendanceId}/${studentId}/${date}/`,
     {
       method: "PUT",
       credentials: "include",
@@ -488,14 +467,14 @@ const attendanceUpdate = (data, studentId, date, attendanceId) => {
 
 //DELETE
 const deleteClass = (id) => {
-  return fetch(api_key + "class/" + id, {
+  return fetch(api_key + "/class/" + id, {
     method: "DELETE",
     credentials: "include",
   });
 };
 
 const deleteStudent = (id) => {
-  return fetch(api_key + "student/" + id, {
+  return fetch(api_key + "/student/" + id, {
     method: "DELETE",
     credentials: "include",
   });
@@ -503,14 +482,14 @@ const deleteStudent = (id) => {
 
 /* Teacher Delete */
 const deleteTeacher = (id) => {
-  return fetch(api_key + "teacher/" + id, {
+  return fetch(api_key + "/teacher/" + id, {
     method: "DELETE",
     credentials: "include",
   });
 };
 /* Staff Delete */
 const deleteStaff = (id) => {
-  return fetch(api_key + "staff/" + id, {
+  return fetch(api_key + "/staff/" + id, {
     method: "DELETE",
     credentials: "include",
   });
@@ -525,7 +504,7 @@ const dateTime = (date) => {
 
 //
 const fetchImageAndConvertToDataURI = async (folder, filename) => {
-  const response = await fetch(api_key + "image/" + `${folder}/${filename}`, {
+  const response = await fetch(api_key + "/image/" + `${folder}/${filename}`, {
     credentials: "include",
   });
   const blob = await response.blob();
@@ -540,7 +519,7 @@ const formDate = (date) => {
 };
 /* Accounts Delete */
 const deleteAccounts = (id) => {
-  return fetch(api_key + "accounts/" + id, {
+  return fetch(api_key + "/accounts/" + id, {
     method: "DELETE",
     credentials: "include",
   });
@@ -549,7 +528,7 @@ const deleteAccounts = (id) => {
 /* Salary Delete */
 /* Teacher Delete */
 const deleteSalary = (id) => {
-  return fetch(api_key + "salary/" + id, {
+  return fetch(api_key + "/salary/" + id, {
     method: "DELETE",
     credentials: "include",
   });

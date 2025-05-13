@@ -41,7 +41,7 @@ const EditTeacher = () => {
     formData.append("image", renamedFile);
     try {
       const response = await axios.post(
-        `${api_key}teacher_upload`,
+        `${api_key}/teacher_upload`,
         formData,
         {
           withCredentials: true,

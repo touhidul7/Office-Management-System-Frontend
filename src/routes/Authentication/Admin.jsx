@@ -13,13 +13,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Admin = () => {
+  const api_key = import.meta.env.VITE_apiKey;
     const [eye, setEye] = useState(false)
     const handleEye = () => {
         setEye(!eye)
     }
 
     const handleLogin = () => {
-      fetch('http://localhost:5000/admin_login', {
+      fetch(`${api_key}admin_login`, {
         method: 'POST',
         credentials: 'include', // Send cookies along with the request
         headers: {

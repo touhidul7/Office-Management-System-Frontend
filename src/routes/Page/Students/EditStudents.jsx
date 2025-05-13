@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import Alert from "@/components/app_components/Alert";
 import Loading from "@/components/app_components/Loading";
@@ -30,7 +31,7 @@ const EditStudents = () => {
   const { register, handleSubmit, setValue } = useForm();
   const navigate = useNavigate();
   const [isData, setIsData] = useState(false);
-
+  const api_key = import.meta.env.VITE_apiKey;
   const [stdId, setStdID] = useState("");
   const [tableId, setTableId] = useState(null);
 
@@ -50,7 +51,7 @@ const EditStudents = () => {
     formData.append("image", renamedFile);
     try {
       const response = await axios.post(
-        "http://localhost:5000/student_upload",
+        `${api_key}/student_upload`,
         formData,
         {
           withCredentials: true,

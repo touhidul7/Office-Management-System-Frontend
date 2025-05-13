@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Alert from "@/components/app_components/Alert";
 import ClassAttendanceTable from "@/components/app_components/ClassAttendanceTable";
 import Loading from "@/components/app_components/Loading";

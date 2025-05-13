@@ -90,18 +90,6 @@ export function Login() {
       }
     );
 
-
-    // fetch('https://inspiredit-management-server.vercel.app/' + "settings", {
-    //   method: "GET",
-    //   credentials: "include",
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    // }).then(res => res.json())
-    // .then(data => {
-    //   console.log(data)
-  
-    // })
   }, [])
   return (
     <>

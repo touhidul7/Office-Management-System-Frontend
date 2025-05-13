@@ -13,6 +13,7 @@ import { AuthContext } from "@/Providers/AuthProvider";
 
 
 const Settings = () => {
+  const api_key = import.meta.env.VITE_apiKey;
   const { admin, changeUserState } = useContext(AuthContext)
   const [isData, setIsData] = useState(true);
   const [image, setImage] = useState(null)
@@ -38,7 +39,7 @@ const Settings = () => {
     const renamedFile = new File([image],`${filename}.${ext}`, {type: image.type})
     formData.append('image', renamedFile);
     try {
-      const response = await axios.post('http://localhost:5000/logo_upload', formData, {
+      const response = await axios.post(`${api_key}/logo_upload`, formData, {
         withCredentials: true,
         onUploadProgress: (progressEvent) => {
           const progress = Math.round((progressEvent.loaded / progressEvent.total) * 100);

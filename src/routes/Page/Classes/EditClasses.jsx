@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Loading from "@/components/app_components/Loading";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
