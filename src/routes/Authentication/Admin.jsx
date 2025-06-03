@@ -20,7 +20,7 @@ const Admin = () => {
     }
 
     const handleLogin = () => {
-      fetch(`${api_key}admin_login`, {
+      fetch(`${api_key}/admin_login`, {
         method: 'POST',
         credentials: 'include', // Send cookies along with the request
         headers: {
@@ -39,7 +39,7 @@ const Admin = () => {
 
 
     const handleLogout = () => {
-      fetch('http://localhost/admin_logout', {
+      fetch(`${api_key}/admin_logout`, {
         method: 'GET',
         credentials: 'include', // Send cookies along with the request
       })
