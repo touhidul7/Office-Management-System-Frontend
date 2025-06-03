@@ -6,8 +6,6 @@ import "./index.css";
 import { ThemeProvider } from "@/components/theme/theme-provider.jsx";
 import Dashboard from "./routes/Dashboard.jsx";
 import Teachers from "./routes/Page/Teachers/Teachers.jsx";
-import { Login } from "./components/app_components/Login.jsx";
-// import DashboardContent from "./routes/PageDashboardContent.jsx";
 import AddTeacher from "./routes/Page/Teachers/AddTeacher.jsx";
 import Students from "./routes/Page/Students/Students.jsx";
 import AddStudents from "./routes/Page/Students/AddStudents.jsx";
@@ -25,8 +23,6 @@ import Sections from "./routes/Page/Sections/Sections";
 import Results from "./routes/Page/Result/Results";
 import AddResults from "./routes/Page/Result/AddResults";
 import IdCards from "./routes/Page/IdCard/IdCards";
-import Salaries from "./routes/Page/Salary/SalaryReport";
-import AddSalaries from "./routes/Page/Salary/PaySalary";
 import Reports from "./routes/Page/Report/Reports";
 import AddReports from "./routes/Page/Report/AddReports";
 import Exams from "./routes/Page/Exam/Exams";
@@ -45,7 +41,6 @@ import SalaryReport from "./routes/Page/Salary/SalaryReport";
 import EditClasses from "./routes/Page/Classes/EditClasses";
 import AddAttendance from "./routes/Page/Attendance/AddAttendance";
 import TeacherProfile from "./routes/Page/Profile/TeacherProfile";
-import TsProfile from "./routes/Page/Profile/TeacherProfile";
 import StaffProfile from "./routes/Page/Profile/StaffProfile";
 import Home from "./routes/Home";
 import EditStudents from "./routes/Page/Students/EditStudents";
@@ -242,31 +237,6 @@ const router = createBrowserRouter([
         path: '*',
         element: <NotFound />,
       },
-
-      /*       {
-              path: '/dashboard',
-              element: <Dashboard/>
-            },
-            {
-              path: '/teachers',
-              element: <Teachers/>
-            },
-            {
-              path: '/customers',
-              element: <Customers/>
-            },
-            {
-              path: '/analytics',
-              element: <Analytics/>
-            },
-            {
-              path: '/admin_login',
-              element: <Admin/>
-            },
-            {
-              path: '/staff_login',
-              element: <Staff/>
-            } */
     ],
   },
   {
